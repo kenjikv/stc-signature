@@ -19,7 +19,8 @@ ROOT = SCRIPTS.parent
 FIRMAS_OUT = ROOT / "02-firmas"
 DATOS_XLSX_DEFAULT = SCRIPTS / "datos.xlsx"
 TEMPLATE_DEFAULT = SCRIPTS / "02-firmas" / "kenji-kawaida" / "firma.html"
-BASE = "https://cdn.jsdelivr.net/gh/kenjikv/stc-signature"
+# Fijamos la rama para evitar caché/resolve ambiguo (master vs main) en jsDelivr.
+BASE = "https://cdn.jsdelivr.net/gh/kenjikv/stc-signature@main"
 
 SLUG_BY_NAME: dict[str, str] = {
     "Rolando Kerlin Ruiz Justiniano": "rolando-ruiz",
